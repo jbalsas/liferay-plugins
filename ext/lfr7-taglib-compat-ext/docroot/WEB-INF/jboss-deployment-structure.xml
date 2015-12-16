@@ -1,0 +1,21 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+	<deployment>
+		<dependencies>
+			<module name="deployment.util-taglib"></module>
+			<module name="com.liferay.portal"></module>
+		</dependencies>
+	</deployment>
+	<module name="deployment.util-taglib">
+	  <resources>
+			<resource-root path="WEB-INF/ext-util-taglib/ext-util-taglib.jar" />
+			<resource-root path="WEB-INF/lib/util-taglib.jar"></resource-root>
+			<resource-root path="WEB-INF/lib/util-java.jar"></resource-root>
+		</resources>
+		<dependencies>
+			<module name="javax.faces.api"></module>
+			<module name="javax.servlet.api" />
+			<module name="javax.servlet.jsp.api" />
+			<module name="com.liferay.portal"></module>
+		</dependencies>
+	</module>
+</jboss-deployment-structure>
